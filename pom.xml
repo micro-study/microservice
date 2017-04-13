@@ -16,10 +16,10 @@
   </properties>
   
   <parent>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-parent</artifactId>
-    <version>1.4.5.RELEASE</version>
-</parent>
+	    <groupId>org.springframework.boot</groupId>
+	    <artifactId>spring-boot-starter-parent</artifactId>
+	    <version>1.4.5.RELEASE</version>
+	</parent>
 
 	<dependencyManagement>
 	    <dependencies>
@@ -53,7 +53,10 @@
       </plugin>
     </plugins>
   </build>
+  
+  
   <modules>
     <module>microservice-discovery-eureka</module>
+    <module>microservice-provider</module>
   </modules>
 </project>

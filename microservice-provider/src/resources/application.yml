@@ -1,0 +1,48 @@
+server:
+  port: ${port:8088}
+  use-forward-headers: true
+  tomcat:
+    protocol-header: X-FORWARDED-PROTO
+    remote-ip-header: X-FORWARDED-FOR
+    port-header: X-Forwarded-Port
+    max-threads: 100
+spring:
+  aop:
+    auto: true
+    proxy-target-class: true
+  application:
+    name: UserManager
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+ #    url: jdbc:mysql://192.168.0.133:63306/51vj?characterEncoding=utf-8&allowMultiQueries=true&autoReconnect=true
+ #    username: vj
+ #    password: box123$%^51V
+ 
+    url: jdbc:mysql://120.76.192.62:3306/family_genealogy_system?characterEncoding=utf-8&allowMultiQueries=true&autoReconnect=true
+    username: root
+    password: lufei
+    
+    
+    initSize: 20
+    minIdle: 20
+    maxActive: 100
+    # 使用druid数据源
+ #   type: com.alibaba.druid.pool.DruidDataSource
+ #   driver-class-name: com.mysql.jdbc.Driver
+ #   filters: stat
+ #   maxActive: 20
+ #   initialSize: 1
+  #  maxWait: 60000
+  #  minIdle: 1
+ #   timeBetweenEvictionRunsMillis: 60000
+ #   minEvictableIdleTimeMillis: 300000
+ #   validationQuery: select 'x'
+ #   testWhileIdle: true
+ #   testOnBorrow: false
+ #   testOnReturn: false
+ #   poolPreparedStatements: true
+  #  maxOpenPreparedStatements: 20
+   
+
+ 
+ 
