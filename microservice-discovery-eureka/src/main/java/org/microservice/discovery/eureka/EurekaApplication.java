@@ -1,12 +1,14 @@
-package com.itmuch.cloud.study;
+package org.microservice.discovery.eureka;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
- * 使用Eureka做服务发现.
- * @author eacdy
+ * 使用Eureka做服务发现。
+ * @author huangzhuo
+ *
+ * @version 创建时间： 2017年4月13日 下午2:58:49
  */
 @SpringBootApplication
 @EnableEurekaServer
