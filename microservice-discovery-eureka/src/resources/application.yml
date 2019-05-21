@@ -1,17 +1,40 @@
+#server:
+#  port: 8762
+#
+#eureka:
+#  client:
+#    registerWithEureka: false
+#    fetchRegistry: false
+#  server:
+#    waitTimeInMsWhenSyncEmpty: 0
+spring:
+  application:
+    name: eureka-service
+
 server:
-  port: 8212                    # 指定该Eureka实例的端口
+  port: 8762                    # 指定该Eureka实例的端口
 
 eureka:
   instance:
-    hostname: discovery         # 指定该Eureka实例的主机名
+    hostname: eurekaServer         # 指定该Eureka实例的主机名
   server:
     enableSelfPreservation: false
   client:
-    registerWithEureka: false
-    fetchRegistry: false
+    registerWithEureka: true
+    fetchRegistry: true
     serviceUrl:
- #     defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-      defaultZone: ${EUREKA_ZONE:http://localhost:8212/eureka/}
+      defaultZone: ${EUREKA_ZONE:http://localhost:8762/eureka/}
 
+#security:
+#  basic:
+#    enabled: false
+
+
+
+
+
+
+
+# eureka.client.serviceUrl.defaultZone   http://${eureka.instance.hostname}:${server.port}/eureka/   defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/  ${EUREKA_ZONE:http://localhost:8212/eureka/}
 # 参考文档：http://projects.spring.io/spring-cloud/docs/1.0.3/spring-cloud.html#_standalone_mode
 # 参考文档：http://my.oschina.net/buwei/blog/618756
