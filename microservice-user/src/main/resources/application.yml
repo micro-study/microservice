@@ -1,0 +1,16 @@
+server:
+  port: ${port:8082}
+
+spring:
+  application:
+    name: microservice-user
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER_LIST:http://localhost:8762/eureka/}    # 指定注册中心的地址
+  instance:
+    preferIpAddress: true
+ 
+
+ 
