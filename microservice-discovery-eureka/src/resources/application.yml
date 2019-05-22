@@ -20,8 +20,8 @@ eureka:
   server:
     enableSelfPreservation: false
   client:
-    registerWithEureka: true
-    fetchRegistry: true
+    registerWithEureka: false
+    fetchRegistry: false
     serviceUrl:
       defaultZone: ${EUREKA_ZONE:http://localhost:8762/eureka/}
 

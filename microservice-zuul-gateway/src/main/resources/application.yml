@@ -17,8 +17,29 @@ zuul:
   routes:
     ignored-services: '*'          # 需要忽视的服务(配置后将不会被路由)
     consumer:                                               # 可以随便写，在zuul上面唯一即可；当这里的值 = service-id时，service-id可以不写。
-      path: /consumer/**                                    # 想要映射到的路径
+      path: /v1/consumer/**                                    # 想要映射到的路径
       service-id: microservice-consumer            # Eureka中的serviceId
+#  max:
+#    host:
+#      connections: 500
+#  host:
+#    socket-timeout-millis: 60000
+#    connect-timeout-millis: 60000
+#hystrix:    
+#  command:        
+#    default:            
+#      execution:                
+#        isolation:                    
+#          thread:                       
+#            timeoutInMilliseconds: 5000
+
+
+
+#ribbon:
+#  ReadTimeout: 2000
+#  ConnectTimeout: 1000
+#  MaxAutoRetries: 1
+#  MaxAutoRetriesNextServer: 1
  
 
  
