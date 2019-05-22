@@ -75,5 +75,6 @@
         <module>microservice-consumer</module>
         <module>microservice-user</module>
         <module>microservice-zuul-gateway</module>
+        <module>module</module>
     </modules>
 </project>
