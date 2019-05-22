@@ -7,7 +7,6 @@ import org.apache.ibatis.reflection.MetaObject;
 import org.apache.ibatis.reflection.SystemMetaObject;
 import org.apache.ibatis.session.ResultHandler;
 import org.apache.ibatis.session.RowBounds;
-import org.omg.PortableInterceptor.Interceptor;
 
 import javax.xml.bind.PropertyException;
 import java.util.ArrayList;
@@ -223,4 +222,6 @@ public class PageHelper implements Interceptor {
             }
         }
     }
+
+
 }
