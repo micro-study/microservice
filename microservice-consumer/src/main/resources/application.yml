@@ -4,6 +4,15 @@ server:
 spring:
   application:
     name: microservice-consumer
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://39.108.216.43:3306/springboot?characterEncoding=utf-8&allowMultiQueries=true&autoReconnect=true
+    username: zls
+    password: hz123456
+    initSize: 20
+    minIdle: 20
+    maxActive: 100
+
 
 eureka:
   client:

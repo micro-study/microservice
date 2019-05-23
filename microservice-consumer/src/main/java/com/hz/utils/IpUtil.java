@@ -1,4 +1,4 @@
-package com.hz.modul.common.utils;
+package com.hz.utils;
 
 import org.apache.commons.lang3.StringUtils;
 
